@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: inter;
+    font-size: .875rem;
+    align-content: center;
+    block-size: 100dvh;
+    color: #132B50;
+    background: #F6F7F8;
+}
+.card {
+    display: grid;
+    gap: 1.2rem;
+    margin: auto;
+    padding: clamp(1rem, .5rem + 1.5vw, 3rem);
+    inline-size: 60%;
+    max-inline-size: 22rem;
+    min-inline-size: 16rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 4px 4px 32px 4px #132b501f;
+}
+.account {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+.account img {
+    inline-size: 44px;
+    object-fit: cover;
+    object-position: right center;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+.account-info p:first-child {
+    margin-bottom: .125rem;
+}
+.account-info p:last-child {
+    font-weight: 700;
+}
+.password-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .25rem;
+}
+.password-field input {
+    inline-size: 100%;
+    block-size: 2.5rem;
+    border: 1px solid #132B50;
+    border-radius: 6px;
+}
+#pw {
+    font-weight: 500;
+    padding-left: 2rem;
+    color: #132B50;
+}
+#lock-icon {
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translate(0%, -50%);
+}
+#eye-icon {
+    display: block;
+    position: absolute;
+    top: 55%;
+    right: 7px;
+    padding: 0;
+    transform: translate(0%, -50%);
+    color: #132B50;
+    background-color: transparent;
+    border: none;
+}
+#eye-icon:is(:hover, :focus-visible) {
+    background-color: #4854663a;
+    border-radius: 4px;
+}
+#crossed-eye {
+    display: none;
+    position: absolute;
+    top: 55%;
+    right: 7px;
+    transform: translate(0%, -50%);
+    color: #132B50;
+    background-color: transparent;
+    border: none;
+}
+#crossed-eye:is(:hover, :focus-visible) {
+    background-color: #4854663a;
+    border-radius: 4px;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actions > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+label {
+    cursor: pointer;
+}
+#cb {
+    appearance: none;
+    background-color: transparent;
+}
+/* checkbox-slider */
+.custom-checkbox {
+    position: relative;
+    inline-size: 40px;
+    block-size: 24px;
+    border: 1px solid #132B50;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+/* checkbox-circle */
+.custom-checkbox::before {
+    content: '';
+    top: 50%;
+    left: 3px;
+    position: absolute;
+    inline-size: 18px;
+    block-size: 18px;
+    transform: translate(0, -50%);
+    background-color: #132B50;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+.custom-checkbox:has(input:checked) {
+    background-color: #132B50;
+}
+.custom-checkbox:has(input:checked)::before {
+    background-color: #fff;
+    translate: 14px;
+}
+a {
+    font-weight: 700;
+    color: #132B50;
+}
+.actions input {
+    padding: .75rem;
+    color: #fff;
+    background-color: #132B50;
+    border: none;
+    border-radius: 6px;
+}
+.actions input:is(:hover, :focus-visible) {
+    background-color: #3a4e6b;
+}
