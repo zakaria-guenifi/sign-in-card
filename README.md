@@ -1,5 +1,5 @@
-# Icodethis - Get in Touch component
-This is a solution to the Icodethis - Get in Touch component
+# Icodethis - Sign in Card
+This is a solution to the Icodethis - Sign in Card
 
 ## Table of contents
 - [Overview](#overview)
@@ -12,17 +12,17 @@ This is a solution to the Icodethis - Get in Touch component
 
 
 ## Overview
-This was a small project I wanted to try out for fun. It seemed simple at first, but there were some nice little challenges, like handling UI shifts, making it responsive, and adding a theme toggle. I learned a few things along the way and really enjoyed building it.
+This was a simple sign-in card project, but it gave me a good chance to focus on clean layout, accessibility, and responsive design. Even though it's a small component, it helped me practice handling form elements properly and making sure everything works well on different screen sizes and for all users.
 
 ### Screenshot
 ![](./screenshot-desktop.jpg) ![](./screenshot-mobile.jpg)
 
 ### Links
-- Solution URL: [github repo](https://github.com/zakaria-guenifi/get-in-touch-light-and-dark)
-- Live Site URL: [live url](https://zakaria-guenifi.github.io/get-in-touch-light-and-dark/)
+- Solution URL: [github repo](https://github.com/zakaria-guenifi/sign-in-card)
+- Live Site URL: [live url](https://zakaria-guenifi.github.io/sign-in-card/)
 
 ## My process
-I started by exploring the project to figure out how I wanted to approach it. I built the HTML structure, styled everything with CSS, and wrapped it up by adding the theme toggle using a bit of JavaScript.
+I started by exploring the project to figure out how I wanted to approach it. I built the HTML structure, styled everything with CSS, and wrapped it up by adding the password toggle using a bit of JavaScript.
 
 ### Built with
 - Semantic HTML5 markup
